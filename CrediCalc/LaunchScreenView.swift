@@ -3,7 +3,7 @@ import SwiftUI
 struct LaunchScreenView: View {
     var body: some View {
         VStack {
-            Image("LauncImage")
+            Image("LaunchImage")
                 .resizable()
                 .frame(maxWidth: .infinity, alignment: .center)
                 .frame(width: 250, height: 250)
