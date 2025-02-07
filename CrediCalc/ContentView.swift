@@ -8,7 +8,7 @@ struct ContentView: View {
     @State private var totalOverpayment: Double = 0.0
     @State private var totalPayment: Double = 0.0
     @State private var overpaymentPercentage: Double = 0.0
-    
+
     var body: some View {
         Text("Loan calc")
             .padding()
@@ -75,9 +75,10 @@ struct ContentView: View {
             Section {
                 Button(action: {
                     let loanAmount = Double(self.loanAmount) ?? 0.0
-                    let interestRate = Double(self.percentage ?? 0.0) / 12.0 / 100.0
+                    let interestRate =
+                        Double(self.percentage ?? 0.0) / 12.0 / 100.0
                     let months = Double(self.loanTerm) ?? 0.0
-                        
+
                     let numerator =
                         loanAmount * interestRate
                         * pow(1 + interestRate, months)
@@ -238,7 +239,7 @@ struct ContentView: View {
             .listRowBackground(Color.clear)
         }
         .scrollContentBackground(.hidden)
-//                .background(Color(UIColor.systemGray6))
+        //                .background(Color(UIColor.systemGray6))
         //                .cornerRadius(25)
     }
 }
@@ -246,8 +247,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-
-
-
-

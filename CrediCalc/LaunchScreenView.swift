@@ -14,4 +14,3 @@ struct LaunchScreenView: View {
         }
     }
 }
-
