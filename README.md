@@ -2,7 +2,8 @@
   <img src="/image/Icon.png" width="150" height="150"/>
 <img src="/image/NameLogo.png" width="350" height="150"/>
 </p> 
-# Overview
+
+## Overview
 A tutorial mini-application created as part of SwiftUI self-study. It's a loan calculator that helps to calculate basic loan parameters.
 The project is designed for learning SwiftUI, working with user input, formatting numbers, and customizing the interface.
 
