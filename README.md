@@ -23,3 +23,7 @@ The project is designed for learning SwiftUI, working with user input, formattin
 * Input of loan amount, term and interest rate  
 * Automatic calculation of all parameters  
 * UI with custom design and shadows  
+
+## 📱 Supported Devices
+This app is designed for **iPhone/iPad**.  
+<!--It automatically adapts to different screen sizes, maintaining a consistent UI.-->
