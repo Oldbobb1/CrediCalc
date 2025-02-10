@@ -8,10 +8,11 @@ struct ContentView: View {
     @State private var totalOverpayment: Double = 0.0
     @State private var totalPayment: Double = 0.0
     @State private var overpaymentPercentage: Double = 0.0
-
+    
     var body: some View {
         Text("Loan calc")
             .padding()
+            .bold()
             .foregroundStyle(.black)
             .font(.largeTitle)
         List {
@@ -22,16 +23,12 @@ struct ContentView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 18)
                             .stroke(Color.green, lineWidth: 3)
-                            .background(
-                                RoundedRectangle(cornerRadius: 18)
-                                    .fill(Color.white)
+                            .shadow(
+                                color: Color.gray.opacity(0.4), radius: 5,
+                                x: 1, y: 1
                             )
                             .shadow(
-                                color: Color.gray.opacity(0.2), radius: 3,
-                                x: 2, y: 2
-                            )
-                            .shadow(
-                                color: Color.white.opacity(0.7), radius: 3,
+                                color: Color.white.opacity(0.9), radius: 3,
                                 x: -2, y: -2)
                     )
                 TextField("Loan Term", text: $loanTerm)
@@ -40,16 +37,12 @@ struct ContentView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 18)
                             .stroke(Color.green, lineWidth: 3)
-                            .background(
-                                RoundedRectangle(cornerRadius: 18)
-                                    .fill(Color.white)
+                            .shadow(
+                                color: Color.gray.opacity(0.4), radius: 5,
+                                x: 1, y: 1
                             )
                             .shadow(
-                                color: Color.gray.opacity(0.2), radius: 3,
-                                x: 2, y: 2
-                            )
-                            .shadow(
-                                color: Color.white.opacity(0.7), radius: 3,
+                                color: Color.white.opacity(0.9), radius: 3,
                                 x: -2, y: -2)
                     )
                 TextField("Stake, %", value: $percentage, format: .number)
@@ -58,16 +51,12 @@ struct ContentView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 18)
                             .stroke(Color.green, lineWidth: 3)
-                            .background(
-                                RoundedRectangle(cornerRadius: 18)
-                                    .fill(Color.white)
+                            .shadow(
+                                color: Color.gray.opacity(0.4), radius: 5,
+                                x: 1, y: 1
                             )
                             .shadow(
-                                color: Color.gray.opacity(0.2), radius: 3,
-                                x: 2, y: 2
-                            )
-                            .shadow(
-                                color: Color.white.opacity(0.7), radius: 3,
+                                color: Color.white.opacity(0.9), radius: 3,
                                 x: -2, y: -2)
                     )
             }
@@ -98,11 +87,12 @@ struct ContentView: View {
                             RoundedRectangle(cornerRadius: 18)
                                 .fill(Color.blue)
                                 .shadow(
-                                    color: Color.black.opacity(0.2), radius: 3,
-                                    x: 2, y: 2
+                                    color: Color.blue.opacity(0.5), radius: 5,
+                                    x: 1, y: 1
                                 )
                                 .shadow(
-                                    color: Color.white.opacity(0.7), radius: 3,
+                                    color: Color(UIColor.systemGray3),
+                                    radius: 3,
                                     x: -2, y: -2)
                         )
                 }
@@ -123,16 +113,12 @@ struct ContentView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(Color.orange, lineWidth: 3)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Color.white)
+                        .shadow(
+                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            y: 1
                         )
                         .shadow(
-                            color: Color.black.opacity(0.2), radius: 3, x: 2,
-                            y: 2
-                        )
-                        .shadow(
-                            color: Color.white.opacity(0.7), radius: 3, x: -2,
+                            color: Color.white.opacity(0.6), radius: 3, x: -2,
                             y: -2)
                 )
                 HStack {
@@ -148,20 +134,16 @@ struct ContentView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(Color.blue, lineWidth: 3)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Color.white)
+                        .shadow(
+                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            y: 1
                         )
                         .shadow(
-                            color: Color.black.opacity(0.2), radius: 3, x: 2,
-                            y: 2
-                        )
-                        .shadow(
-                            color: Color.white.opacity(0.7), radius: 3, x: -2,
+                            color: Color.white.opacity(0.6), radius: 3, x: -2,
                             y: -2)
                 )
                 HStack {
-                    Text("Opverpayment")
+                    Text("Overpayment")
                         .font(.headline)
                         .foregroundStyle(.green)
                     Text(String(format: "%.2f", self.totalOverpayment))
@@ -173,16 +155,12 @@ struct ContentView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(Color.purple, lineWidth: 3)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Color.white)
+                        .shadow(
+                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            y: 1
                         )
                         .shadow(
-                            color: Color.black.opacity(0.2), radius: 3, x: 2,
-                            y: 2
-                        )
-                        .shadow(
-                            color: Color.white.opacity(0.7), radius: 3, x: -2,
+                            color: Color.white.opacity(0.6), radius: 3, x: -2,
                             y: -2)
                 )
                 HStack {
@@ -198,16 +176,12 @@ struct ContentView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(Color.teal, lineWidth: 3)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Color.white)
+                        .shadow(
+                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            y: 1
                         )
                         .shadow(
-                            color: Color.black.opacity(0.2), radius: 3, x: 2,
-                            y: 2
-                        )
-                        .shadow(
-                            color: Color.white.opacity(0.7), radius: 3, x: -2,
+                            color: Color.white.opacity(0.6), radius: 3, x: -2,
                             y: -2)
                 )
                 HStack {
@@ -223,24 +197,18 @@ struct ContentView: View {
                 .background(
                     RoundedRectangle(cornerRadius: 18)
                         .stroke(Color.purple, lineWidth: 3)
-                        .background(
-                            RoundedRectangle(cornerRadius: 18)
-                                .fill(Color(UIColor.systemBackground))
+                        .shadow(
+                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            y: 1
                         )
                         .shadow(
-                            color: Color.black.opacity(0.2), radius: 3, x: 2,
-                            y: 2
-                        )
-                        .shadow(
-                            color: Color.white.opacity(0.7), radius: 3, x: -2,
+                            color: Color.white.opacity(0.6), radius: 3, x: -2,
                             y: -2)
                 )
             }
             .listRowBackground(Color.clear)
         }
         .scrollContentBackground(.hidden)
-        //                .background(Color(UIColor.systemGray6))
-        //                .cornerRadius(25)
     }
 }
 
