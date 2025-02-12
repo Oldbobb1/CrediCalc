@@ -4,7 +4,7 @@
 </p> 
 
 ## Overview
-A tutorial mini-application created as part of SwiftUI self-study. It's a loan calculator that helps to calculate basic loan parameters.
+A tutorial MVP created as part of a self-study on SwiftUI.
 The project is designed for learning SwiftUI, working with user input, formatting numbers, and customizing the interface.
 
 ## 🚀 Description

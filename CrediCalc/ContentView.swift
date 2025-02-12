@@ -17,47 +17,81 @@ struct ContentView: View {
             .font(.largeTitle)
         List {
             Section {
-                TextField("Loan Amount", text: $loanAmount)
+                TextField(
+                    "Loan Amount",
+                    text: $loanAmount
+                )
                     .padding(.all)
                     .keyboardType(.numberPad)
                     .background(
                         RoundedRectangle(cornerRadius: 18)
-                            .stroke(Color.green, lineWidth: 3)
-                            .shadow(
-                                color: Color.gray.opacity(0.4), radius: 5,
-                                x: 1, y: 1
+                            .stroke(
+                                Color.green,
+                                lineWidth: 3
                             )
                             .shadow(
-                                color: Color.white.opacity(0.9), radius: 3,
-                                x: -2, y: -2)
+                                color: Color.gray.opacity(0.4),
+                                radius: 5,
+                                x: 1,
+                                y: 1
+                            )
+                            .shadow(
+                                color: Color.white.opacity(0.9),
+                                radius: 3,
+                                x: -2,
+                                y: -2
+                            )
                     )
-                TextField("Loan Term", text: $loanTerm)
+                TextField(
+                    "Loan Term",
+                    text: $loanTerm
+                )
                     .padding(.all)
                     .keyboardType(.numberPad)
                     .background(
                         RoundedRectangle(cornerRadius: 18)
-                            .stroke(Color.green, lineWidth: 3)
-                            .shadow(
-                                color: Color.gray.opacity(0.4), radius: 5,
-                                x: 1, y: 1
+                            .stroke(
+                                Color.green,
+                                lineWidth: 3
                             )
                             .shadow(
-                                color: Color.white.opacity(0.9), radius: 3,
-                                x: -2, y: -2)
+                                color: Color.gray.opacity(0.4),
+                                radius: 5,
+                                x: 1,
+                                y: 1
+                            )
+                            .shadow(
+                                color: Color.white.opacity(0.9),
+                                radius: 3,
+                                x: -2,
+                                y: -2
+                            )
                     )
-                TextField("Stake, %", value: $percentage, format: .number)
+                TextField(
+                    "Stake, %",
+                    value: $percentage,
+                    format: .number
+                )
                     .padding(.all)
                     .keyboardType(.numberPad)
                     .background(
                         RoundedRectangle(cornerRadius: 18)
-                            .stroke(Color.green, lineWidth: 3)
-                            .shadow(
-                                color: Color.gray.opacity(0.4), radius: 5,
-                                x: 1, y: 1
+                            .stroke(
+                                Color.green,
+                                lineWidth: 3
                             )
                             .shadow(
-                                color: Color.white.opacity(0.9), radius: 3,
-                                x: -2, y: -2)
+                                color: Color.gray.opacity(0.4),
+                                radius: 5,
+                                x: 1,
+                                y: 1
+                            )
+                            .shadow(
+                                color: Color.white.opacity(0.9),
+                                radius: 3,
+                                x: -2,
+                                y: -2
+                            )
                     )
             }
             .listRowBackground(Color.clear)
@@ -67,7 +101,6 @@ struct ContentView: View {
                     let interestRate =
                         Double(self.percentage ?? 0.0) / 12.0 / 100.0
                     let months = Double(self.loanTerm) ?? 0.0
-
                     let numerator =
                         loanAmount * interestRate
                         * pow(1 + interestRate, months)
@@ -82,18 +115,25 @@ struct ContentView: View {
                         .foregroundStyle(.white)
                         .font(.title)
                         .padding()
-                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .center
+                        )
                         .background(
                             RoundedRectangle(cornerRadius: 18)
                                 .fill(Color.blue)
                                 .shadow(
-                                    color: Color.blue.opacity(0.5), radius: 5,
-                                    x: 1, y: 1
+                                    color: Color.blue.opacity(0.5),
+                                    radius: 5,
+                                    x: 1,
+                                    y: 1
                                 )
                                 .shadow(
                                     color: Color(UIColor.systemGray3),
                                     radius: 3,
-                                    x: -2, y: -2)
+                                    x: -2,
+                                    y: -2
+                                )
                         )
                 }
             }
@@ -103,23 +143,42 @@ struct ContentView: View {
                     Text("Monthly payment")
                         .font(.title)
                         .foregroundStyle(.cyan)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                    Text(String(format: "%.2f", self.monthlyPayment))
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .center
+                        )
+                    Text(
+                        String(
+                            format: "%.2f",
+                            self.monthlyPayment
+                        )
+                    )
                         .lineLimit(nil)
                         .foregroundStyle(.indigo)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .center
+                        )
                 }
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 18)
-                        .stroke(Color.orange, lineWidth: 3)
+                        .stroke(
+                            Color.orange,
+                            lineWidth: 3
+                        )
                         .shadow(
-                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            color: Color.black.opacity(0.1),
+                            radius: 5,
+                            x: 1,
                             y: 1
                         )
                         .shadow(
-                            color: Color.white.opacity(0.6), radius: 3, x: -2,
-                            y: -2)
+                            color: Color.white.opacity(0.6),
+                            radius: 3,
+                            x: -2,
+                            y: -2
+                        )
                 )
                 HStack {
                     Text("Loan Amount")
@@ -128,82 +187,141 @@ struct ContentView: View {
                     Text(String(self.loanAmount))
                         .font(.headline)
                         .foregroundStyle(.red)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .trailing
+                        )
                 }
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 18)
-                        .stroke(Color.blue, lineWidth: 3)
+                        .stroke(
+                            Color.blue,
+                            lineWidth: 3
+                        )
                         .shadow(
-                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            color: Color.black.opacity(0.1),
+                            radius: 5,
+                            x: 1,
                             y: 1
                         )
                         .shadow(
-                            color: Color.white.opacity(0.6), radius: 3, x: -2,
-                            y: -2)
+                            color: Color.white.opacity(0.6),
+                            radius: 3,
+                            x: -2,
+                            y: -2
+                        )
                 )
                 HStack {
                     Text("Overpayment")
                         .font(.headline)
                         .foregroundStyle(.green)
-                    Text(String(format: "%.2f", self.totalOverpayment))
+                    Text(
+                        String(
+                            format: "%.2f",
+                            self.totalOverpayment
+                        )
+                    )
                         .font(.headline)
                         .foregroundStyle(.pink)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .trailing
+                        )
                 }
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 18)
-                        .stroke(Color.purple, lineWidth: 3)
+                        .stroke(
+                            Color.purple,
+                            lineWidth: 3
+                        )
                         .shadow(
-                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            color: Color.black.opacity(0.1),
+                            radius: 5,
+                            x: 1,
                             y: 1
                         )
                         .shadow(
-                            color: Color.white.opacity(0.6), radius: 3, x: -2,
-                            y: -2)
+                            color: Color.white.opacity(0.6),
+                            radius: 3,
+                            x: -2,
+                            y: -2
+                        )
                 )
                 HStack {
                     Text("Total amount of payments")
                         .font(.headline)
                         .foregroundStyle(.mint)
-                    Text(String(format: "%.2f", self.totalPayment))
+                    Text(
+                        String(
+                            format: "%.2f",
+                            self.totalPayment
+                        )
+                    )
                         .font(.headline)
                         .foregroundStyle(.brown)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .trailing
+                        )
                 }
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 18)
-                        .stroke(Color.teal, lineWidth: 3)
+                        .stroke(
+                            Color.teal,
+                            lineWidth: 3
+                        )
                         .shadow(
-                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            color: Color.black.opacity(0.1),
+                            radius: 5,
+                            x: 1,
                             y: 1
                         )
                         .shadow(
-                            color: Color.white.opacity(0.6), radius: 3, x: -2,
-                            y: -2)
+                            color: Color.white.opacity(0.6),
+                            radius: 3,
+                            x: -2,
+                            y: -2
+                        )
                 )
                 HStack {
                     Text("Overpayment Interest")
                         .font(.headline)
                         .foregroundStyle(.teal)
-                    Text(String(format: "%.2f%%", self.overpaymentPercentage))
+                    Text(
+                        String(
+                            format: "%.2f%%",
+                            self.overpaymentPercentage
+                        )
+                    )
                         .font(.headline)
                         .foregroundStyle(.green)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .frame(
+                            maxWidth: .infinity,
+                            alignment: .trailing
+                        )
                 }
                 .padding()
                 .background(
                     RoundedRectangle(cornerRadius: 18)
-                        .stroke(Color.purple, lineWidth: 3)
+                        .stroke(
+                            Color.purple,
+                            lineWidth: 3
+                        )
                         .shadow(
-                            color: Color.black.opacity(0.1), radius: 5, x: 1,
+                            color: Color.black.opacity(0.1),
+                            radius: 5,
+                            x: 1,
                             y: 1
                         )
                         .shadow(
-                            color: Color.white.opacity(0.6), radius: 3, x: -2,
-                            y: -2)
+                            color: Color.white.opacity(0.6),
+                            radius: 3,
+                            x: -2,
+                            y: -2
+                        )
                 )
             }
             .listRowBackground(Color.clear)
