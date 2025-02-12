@@ -3,7 +3,7 @@
 <img src="/image/NameLogo.png" width="350" height="150"/>
 </p> 
 
-## Overview
+## About
 A tutorial MVP created as part of a self-study on SwiftUI.
 The project is designed for learning SwiftUI, working with user input, formatting numbers, and customizing the interface.
 
