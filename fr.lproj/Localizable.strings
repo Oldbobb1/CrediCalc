@@ -1,0 +1,37 @@
+//LoanAmountInput
+"loanAmount" = "Montant du prêt";
+
+//enum ButtonLAbel
+"calculate" = "Calculer";
+"clear" = "Effacer";
+
+//Loan Term
+"loanTermMonths" = "%d mois";
+"loanTermYear_1" = "1 an";
+"loanTermYearsGeneric" = "%d ans";
+
+//LoanType
+"annuity" = "Rente";
+"differentiated" =  "Différencié";
+
+//CalculationDisclaimer
+"results" = "Résultats";
+"info" = "Ces calculs sont à titre informatif seulement et ne sont pas définitifs!";
+
+//MonthlyPayment
+"monthPayment" = "Paiement mensuel";
+
+//ResultCard
+"overpayment" = "Surpaiement";
+"totalPayment" = "Paiement total";
+"overpaymentPercentage" = "Pourcentage du surpaiement";
+
+//CreditCalculator
+"titleApp" = "Calculateur de crédit";
+"bet" = "Taux, %";
+
+//LoanTypeTip
+"hint" = "Conseil";
+"annuit" = "Paiements égaux (rente) - montants égaux à des intervalles égaux.";
+"differentiat" = "Avec une diminution (différenciée) - des parties dont la taille diminue à la fin de la période de remboursement.";
+"buttonText" = "Fermer";

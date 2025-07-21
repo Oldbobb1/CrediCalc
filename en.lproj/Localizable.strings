@@ -1,0 +1,37 @@
+//LoanAmountInput
+"loanAmount" = "Loan Amount";
+
+//enum ButtonLAbel
+"calculate" = "Calculate";
+"clear" = "Clear";
+
+//LoarTerm
+"loanTermMonths" = "%d months";
+"loanTermYear_1" = "1 year";
+"loanTermYearsGeneric" = "%d years";
+
+//LoanType:
+"annuity" = "Annuity";
+"differentiated" =  "Differentiated";
+
+//CalculationDisclaimer
+"results" = "Results";
+"info" = "These calculations are for informational purposes only and are not final!";
+
+//MonthlyPayment
+"monthPayment" = "Monthly Payment";
+
+//ResultCard
+"overpayment" = "Overpayment";
+"totalPayment" = "Total Payment";
+"overpaymentPercentage" = "Overpayment percentage";
+
+//CreditCalculator
+"titleApp" = "Credit Calculator";
+"bet" = "Bet, %";
+
+//LoanTypeTip
+"hint" = "Hint";
+"annuit" = "Equal payments (annuity) - equal amounts at equal intervals.";
+"differentiat" = "With a reduction (differentiated) - in parts that decrease in size by the end of the repayment period.";
+"buttonText" = "Close";

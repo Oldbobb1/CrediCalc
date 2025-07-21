@@ -1,0 +1,39 @@
+//LoanAmountInput
+"loanAmount" = "Сумма кредита";
+
+//ButtonLAbel
+"calculate" = "Рассчитать";
+"clear" = "Очистить";
+
+//Loan Term
+"loanTermThreeMonths" = "3 месяца";
+"loanTermMonths" = "%d месяцев";
+"loanTermYear_1" = "1 год";
+"loanTermYears" = "%d года";
+"loanTermYearsGeneric" = "%d лет";
+
+//LoanType:
+"annuity" = "Аннуитет";
+"differentiated" =  "Дифференцированный";
+
+//CalculationDisclaimer
+"results" = "Результаты";
+"info" = "Эти расчеты носят информационный характер и не являются окончательными!";
+
+//MonthlyPayment
+"monthPayment" = "Ежемесячный платёж";
+
+//ResultCard
+"overpayment" = "Переплата";
+"totalPayment" = "Общая сумма выплат";
+"overpaymentPercentage" = "Процент переплат";
+
+//CreditCalculator
+"titleApp" = "Кредитный калькулятор";
+"bet" = "Ставка, %";
+
+//LoanTypeTip
+"hint" = "Подсказка";
+"annuit" = "Равные платежи (аннуитетный) - равными суммами через равные промежутки времени.";
+"differentiat" = "С уменьшением (дифференцированный) - частями, размер которых уменьшается к концу периода погашения.";
+"buttonText" = "Закрыть";

@@ -1,22 +1,37 @@
 # 🧮 CrediCalc
+CrediCalc is a simple and beautiful loan calculation application created using SwiftUI. The project has grown from an MVP into a full-fledged application with publication in the App Store.
 
-This MVP created as part of a self-study on SwiftUI.
-The project is designed for learning SwiftUI, working with user input, formatting numbers, and customizing the interface.
+## 🚀 About the project
+CrediCalc allows you to quickly calculate loan payments, including the amount, interest rate and loan term. The application is created with an emphasis on performance, low power consumption and modern design using neomorphic elements.
 
 ## 🔑 Key Features
-* 🎓 Educational purpose: The app serves as a tool to learn the basics of SwiftUI and iOS development.
-
+- 💰 Enter loan amount, interest rate, and loan term
+- 🧠 Instant calculations:
+  - Monthly payment
+  - Overpayment
+  - Total repayment
+- 🎨 Sleek user interface with smooth animations and shadows
+- 🌓 Light and dark mode support
+- 🌐 Localization support:
+  - English 🇺🇸  
+  - Russian 🇷🇺  
+  - German 🇩🇪  
+  - French 🇫🇷  
+  - Spanish 🇪🇸  
+  - Portuguese (Brazil) 🇧🇷  
+    
 ## 🛠 Technology
-* SwiftUI  
-* Swift  
-* swift-format: for code styling.  
+* Swift
+* SwiftUI
+* Combine
+* swift-format for code styling
+* Custom UI components with reuse support 
 
-## 🎯 Project goals
-* 🌍 Demonstration of iOS-application development using SwiftUI.
-* 🧩 Consolidation of knowledge on creating user interface using SwiftUI.
-* 📚 An example for beginners learning Swift, SwiftUI and iOS.
+## 💡 Implementation Highlights
+- Energy-efficient design
+- `@StateObject` for reliable state management
+- Built-in keyboard handling (dismissal and offset)
+- Modular architecture: logic and UI separated cleanly
 
-## 📱 Functionality 
-* Input of loan amount, term and interest rate  
-* Automatic calculation of all parameters  
-* UI with custom design and shadows  
+<!--## 📦 App Store-->
+<!--Available on the App Store: [CrediCalc]()-->

@@ -1,0 +1,58 @@
+//LoanAmountInput
+"loanAmount" = "Darlehensbetrag";
+
+//enum ButtonLAbel
+"calculate" = "Berechnen";
+"clear" = "Zurücksetzen";
+
+//Loan Term
+"loanTermMonths" = "%d Monate";
+"loanTermYear_1" = "1 Jahr";
+"loanTermYearsGeneric" = "%d Jahre";
+
+//LoanType
+"annuity" = "Annuitätendarlehen";
+"differentiated" =  "Differenziert";
+
+//CalculationDisclaimer
+"results" = "Ergebnisse";
+"info" = "Diese Berechnungen dienen nur zu Informationszwecken und sind nicht endgültig!";
+
+//MonthlyPayment
+"monthPayment" = "Monatliche Zahlung";
+
+//ResultCard
+"overpayment" = "Überzahlung";
+"totalPayment" = "Gesamtzahlung";
+"overpaymentPercentage" = "Überzahlungsquote";
+
+//CreditCalculator
+"titleApp" = "Kreditrechner";
+"bet" = "Häufigkeit, %";
+
+//LoanTypeTip
+"hint" = "Häufigkeit";
+"annuit" = "Gleiche Zahlungen (Annuität) - gleiche Beträge in gleichen Abständen.";
+"differentiat" = "Mit Reduzierung (differenziert) - Teile, deren Größe am Ende der Rückzahlungsfrist abnimmt.";
+"buttonText" = "Ende";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

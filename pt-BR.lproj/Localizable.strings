@@ -1,0 +1,58 @@
+//LoanAmountInput
+"loanAmount" = "Valor do empréstimo";
+
+//enum ButtonLAbel
+"calculate" = "Calcular";
+"clear" = "Limpar";
+
+//Loan Term
+"loanTermMonths" = "%d meses";
+"loanTermYear_1" = "1 ano";
+"loanTermYearsGeneric" = "%d anos";
+
+//LoanType
+"annuity" = "Parcelas iguais";
+"differentiated" =  "Diferenciado";
+
+//CalculationDisclaimer
+"results" = "Resultados";
+"info" = "Esses cálculos são apenas para fins informativos e não são finais!";
+
+//MonthlyPayment
+"monthPayment" = "Pagamento Mensal";
+
+//ResultCard
+"overpayment" = "Valor pago em excesso";
+"totalPayment" = "Pagamento total";
+"overpaymentPercentage" = "Percentual de pagamento excedente";
+
+//CreditCalculator
+"titleApp" = "Calculadora de Crédito";
+"bet" = "Taxa, %";
+
+//LoanTypeTip
+"hint" = "Dica";
+"annuit" = "Pagamentos iguais (anuidade) - valores iguais em intervalos iguais.";
+"differentiat" = "Com redução (diferenciado) - parcelas que diminuem ao longo do tempo.";
+"buttonText" = "Fechar";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
