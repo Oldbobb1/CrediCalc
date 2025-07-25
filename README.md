@@ -4,6 +4,14 @@ CrediCalc is a simple and beautiful loan calculation application created using S
 ## 🚀 About the project
 CrediCalc allows you to quickly calculate loan payments, including the amount, interest rate and loan term. The application is created with an emphasis on performance, low power consumption and modern design using neomorphic elements.
 
+## 📸 Screenshots
+<p align="center">
+  <img src="preview/light.png" alt="Light Mode" width="250"/>
+    <img src="preview/light-resl.png" alt="Light Mode Result" width="250"/>
+  <img src="preview/dark.png" alt="Dark Mode" width="250"/>
+  <img src="preview/dark-resl.png" alt="Dark Mode Result" width="250"/>
+</p>
+
 ## 🔑 Key Features
 - 💰 Enter loan amount, interest rate, and loan term
 - 🧠 Instant calculations:
